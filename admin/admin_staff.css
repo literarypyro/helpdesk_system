@@ -25,39 +25,39 @@ th {
 }
 	#menuh
 	{
-	padding-left: 0;
-	width: 100%; 
-	font-size: small;
-	font: bold 14px "Trebuchet MS", Arial, sans-serif;
-	float:left;
+		padding-left: 0;
+		width: 100%; 
+		font-size: small;
+		font: bold 14px "Trebuchet MS", Arial, sans-serif;
+		float:left;
 	}
 
 	#menuh a
 	{
-	text-align: left;
-	display:block;
-	border: 1px solid #555;
-	white-space:nowrap;
-	margin:0;
-	padding: 0.3em;
+		text-align: left;
+		display:block;
+		border: 1px solid #555;
+		white-space:nowrap;
+		margin:0;
+		padding: 0.3em;
 	}
 	#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
 	{
-	color: black;
-	background-color: hsl(45,80%,70%);
-	text-decoration:none;
+		color: black;
+		background-color: hsl(45,80%,70%);
+		text-decoration:none;
 	}
 	
 	#menuh a:hover	/* menu on mouse-over  */
 	{
-	color: black;
+		color: black;
 		background-color: hsl(45,80%,90%);
 /**The color of the links */
 
-	text-decoration:none;
+		text-decoration:none;
 	}	
 	#menuh a.active {
-	color: white;
+		color: white;
 		background-color: hsl(45,60%,40%);
 	}
 	.subheader {
@@ -66,28 +66,28 @@ th {
 	}	
 	#menuh a.top_parent, #menuh a.top_parent:hover  /* attaches down-arrow to all top-parents */
 	{
-	background-position: right center;
-	background-repeat: no-repeat;
+		background-position: right center;
+		background-repeat: no-repeat;
 	}
 	#menuh a.parent, #menuh a.parent:hover 	/* attaches side-arrow to all parents */
 	{
-	background-position: right center;
-	background-repeat: no-repeat;
+		background-position: right center;
+		background-repeat: no-repeat;
 	}
 	#menuh ul
 	{
 	/**This places the overall menu to the straight line*/
 	
-	list-style:none;
-	margin:0;
-	padding:0;
-	float:bottom;
+		list-style:none;
+		margin:0;
+		padding:0;
+		float:bottom;
 	/* NOTE: For adjustable menu boxes you can comment out the above width rule.
 	However, you will have to add padding in the "#menh a" rule so that the menu boxes
 	will have space on either side of the text -- try it */
 	}	
 	
-		#menuh ul ul
+	#menuh ul ul
 	{
 	/**This places the submenu to minimize before hover*/
 	

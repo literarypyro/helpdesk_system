@@ -203,15 +203,15 @@ color: #ffcc35;
 	<div align=center><img src="helpdesk/mrt3.jpg" style="width:100%; height:350;" /></div>
 	-->
 	<div align=center width=100%>
-	<table  class='exception' width=100% style=''>
+	<table  class='exception'  style=''>
 <tr>
-<td width=5%>
+<td >
 <!--
 <img src='mrt-logo.png' style='width:100%;height:100%;' />
 -->
 <img src='mrt-logo.png' style='width:130px;height:80px;' />
 
-</td><td valign=center width=95%><font style='font-size:25px;'><h2><b>Online Helpdesk System</b></h2></font>
+</td><td valign=center ><font style='font-size:25px;'><h2><b>Online Helpdesk System</b></h2></font>
 </td>
 </tr>
 </table>
@@ -282,18 +282,20 @@ showDialog('Welcome to Helpdesk','Good day! Allow us to assist you!','prompt');
 
 	</div>
 -->
-<table class='exception' width=100% style=''>
+<div align=center>
+<table class='exception'  style=''>
 <tr>
-<td width=5%>
+<td >
 <!--
 <img src='mrt-logo.png' style='width:100%;height:100%;' />
 -->
 <img src='mrt-logo.png' style='width:130px;height:80px;' />
 
-</td><td valign=center width=95%><font style='font-size:25px;'><h2><b>Online Helpdesk System</b></h2></font>
+</td><td valign=center><font style='font-size:25px;'><h2><b>Online Helpdesk System</b></h2></font>
 </td>
 </tr>
 </table>
+</div>
 	</body>
 <?php
 
