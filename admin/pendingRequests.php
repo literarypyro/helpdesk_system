@@ -160,9 +160,15 @@ $userRow=$rs->fetch_assoc();
 	}
 	</script>
 	<body style="background-image:url('body background.jpg');">
-		<div align=center><img src="mrt3.jpg" style="width:100%; height:250;" /></div>	
+	
+	<!--
+	<div align=center><img src="mrt3.jpg" style="width:100%; height:250;" /></div>	
 	<div align="right" width=100%><a style='color:red;	font: bold 14px "Trebuchet MS", Arial, sans-serif;' href="logout.php">Log Out</a></div>
 
+	-->
+	<?php 
+	require("web_header.php");
+	?>
 	<!--Heading Table-->
 	<table  width="100%"  bgcolor="#FFFFFF" cellpadding="5px" bordercolor="#CCCCCC" style="border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px">
 <tr>

@@ -163,12 +163,12 @@ for($i=0;$i<$nm;$i++){
 		$tableStyle="";
 	}
 	?>
-	<td <?php echo $tableStyle; ?>><font color="white"><b><?php echo $row['reference_number']; ?></b></font></td>
-	<td <?php echo $tableStyle;  ?>><font color="white"><?php echo $row['client_name']; ?></font></td>
-	<td <?php echo $tableStyle;  ?>><font color="white"><?php echo $row['division_id']; ?></font></td>
-	<td <?php echo $tableStyle;  ?>><font color="white"><?php echo $row2['unit']; ?></font></td>
-	<td <?php echo $tableStyle;  ?>><font color="white"><?php echo $row3['type'].", ".$row['problem_details']; ?></font></td>
-	<td <?php echo $tableStyle;  ?>><font color="white"><?php echo date("F d, Y h:ia",strtotime($row['dispatch_time'])); ?></font></td>
+	<td <?php echo $tableStyle; ?>><font color=""><b><?php echo $row['reference_number']; ?></b></font></td>
+	<td <?php echo $tableStyle;  ?>><font color=""><?php echo $row['client_name']; ?></font></td>
+	<td <?php echo $tableStyle;  ?>><font color=""><?php echo $row['division_id']; ?></font></td>
+	<td <?php echo $tableStyle;  ?>><font color=""><?php echo $row2['unit']; ?></font></td>
+	<td <?php echo $tableStyle;  ?>><font color=""><?php echo $row3['type'].", ".$row['problem_details']; ?></font></td>
+	<td <?php echo $tableStyle;  ?>><font color=""><?php echo date("F d, Y h:ia",strtotime($row['dispatch_time'])); ?></font></td>
 </tr>
 <?php
 	$routing_Option.="<option value='".$row['id']."'>".$row['reference_number']."</option>";
@@ -284,13 +284,13 @@ for($i=0;$i<$nm;$i++){
 		$tableStyle="";
 	}
 	?>
-	<td <?php echo $tableStyle; ?>><font color="white"><b><?php echo $row['reference_number']; ?></b></font></td>
-	<td <?php echo $tableStyle; ?>><font color="white"><?php echo $row['client_name']; ?></font></td>
-	<td <?php echo $tableStyle; ?>><font color="white"><?php echo $row['division_id']; ?></font></td>
-	<td <?php echo $tableStyle; ?>><font color="white"><?php echo $row2['unit']; ?></font></td>
-	<td <?php echo $tableStyle; ?>><font color="white"><?php echo $row3['type'].", ".$row['problem_details']; ?></font></td>
-	<td <?php echo $tableStyle; ?>><font color="white"><?php echo date("F d, Y h:ia",strtotime($row['admin_time'])); ?></font></td>
-	<td <?php echo $tableStyle; ?>><font color="white"><?php echo $row['staffer']; ?></font></td>
+	<td <?php echo $tableStyle; ?>><font color=""><b><?php echo $row['reference_number']; ?></b></font></td>
+	<td <?php echo $tableStyle; ?>><font color=""><?php echo $row['client_name']; ?></font></td>
+	<td <?php echo $tableStyle; ?>><font color=""><?php echo $row['division_id']; ?></font></td>
+	<td <?php echo $tableStyle; ?>><font color=""><?php echo $row2['unit']; ?></font></td>
+	<td <?php echo $tableStyle; ?>><font color=""><?php echo $row3['type'].", ".$row['problem_details']; ?></font></td>
+	<td <?php echo $tableStyle; ?>><font color=""><?php echo date("F d, Y h:ia",strtotime($row['admin_time'])); ?></font></td>
+	<td <?php echo $tableStyle; ?>><font color=""><?php echo $row['staffer']; ?></font></td>
 
 </tr>
 <?php
