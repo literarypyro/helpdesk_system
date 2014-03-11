@@ -19,5 +19,3 @@ ini_set("date.timezone","Asia/Kuala_Lumpur");
 </tr>
 </table>
 </div>
-	<div align="right" width=100%><a style='color:red;	font: bold 14px "Trebuchet MS", Arial, sans-serif;' href="logout.php">Log Out</a></div>
-

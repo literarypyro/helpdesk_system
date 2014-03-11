@@ -39,7 +39,7 @@ if((isset($_POST['location']))&&(isset($_POST['task_id']))){
 <?php
 //$db=new mysqli("localhost","root","","helpdesk_backup");
 $db=retrieveHelpdeskDb();
-$sql="select * from dispatch_staff inner join login  on dispatch_staff.id=login.username where dispatch_staff.id='".$_SESSION['username']."'";
+$sql="select * from dispatch_staff inner join login on dispatch_staff.id=login.username where dispatch_staff.id='".$_SESSION['username']."'";
 $rs=$db->query($sql);
 $userRow=$rs->fetch_assoc();
 
@@ -67,13 +67,13 @@ function markLocation(elementa){
 <title>Update Helpdesk Staff Status</title>
 	<body style="background-image:url('body background.jpg');">
 
-	<?php 
+<?php 
 	require("web_header.php");
-	?>
+?>
 
 <table width="100%"  bgcolor="#FFFFFF" cellpadding="5px" bordercolor="#CCCCCC" style="border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px">
 <tr>
-	<th style='border: 1px solid gray;background-color: #00cc66;color: white;' colspan=2 align=right>Computer Section Personnel: <font color=black><?php echo $userRow['staffer']; ?></font></th>
+	<th class='subheader' style='border: 1px solid gray;' colspan=2 align=right>Computer Section Personnel: <font color=black><?php echo $userRow['staffer']; ?></font></th>
 </tr>
 
 <tr>
@@ -81,7 +81,7 @@ function markLocation(elementa){
 	require("helpdesk_sidebar.php");
 	//background-color:#66ceae; 
 	?>
-	<td width="85%" rowspan=2 valign="top"  style="background-color:#66ceae; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
+	<td width="85%" rowspan=2 valign="top"  style="background-color:hsl(225,80%,70%); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
 	<form action='dispatchTrack.php' method='post'>
 	<table id='cssTable' align=center style='border: 1px solid gray'>
 	<tr><th colspan=2>Report Staff Location</th></tr>
@@ -144,7 +144,7 @@ function markLocation(elementa){
 		//$db=new mysqli("localhost","root","","helpdesk_backup");
 		$db=retrieveHelpdeskDb();
 		$sql="select (select count(*) from forward_task where id=task.id) as forward_count,task.* from task where (select count(*) from accomplishment where task_id=task.id)=0 and dispatch_staff='".$_SESSION['username']."' order by dispatch_time desc";
-
+		
 		$rs=$db->query($sql);
 		$nm=$rs->num_rows;
 		$count=$nm;
@@ -163,7 +163,7 @@ function markLocation(elementa){
 	</tr>
 	</table>
 	</form>	
-</td>
-</tr>
+</td>	
+</tr>	
 </table>
-</body>
+</body>	

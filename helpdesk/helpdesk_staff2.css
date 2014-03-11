@@ -1,5 +1,5 @@
 #cssTable {
-background-color: #062e56;
+background-color: hsl(225,40%,30%);
 color: white;
 
 
@@ -13,15 +13,20 @@ text-decoration: none;
 color: #ffffff;
 }
 
+#alterTable {
+	border-collapse:collapse;
+}
+
 #alterTable td{
-background-color: #062e56;
-color: white;
+background-color: hsl(195,40%,70%);
+color: black;
 	
 }
 
 #alterTable th{
-background-color: #062e56;
+background-color: hsl(45,80%,40%);
 color: white;
+border:1px solid gray;
 	
 }
 table{
@@ -49,8 +54,8 @@ table{
 	}
 	#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
 	{
-	color: white;
-	background-color: #00cc66;
+	color: black;
+	background-color: hsl(45,80%,70%);
 	text-decoration:none;
 	/**	color: #bd2031;*/
 	}
@@ -59,14 +64,19 @@ table{
 	#menuh a:hover	/* menu on mouse-over  */
 	{
 	color: black;
-		background-color: #ed5214;
+		background-color: hsl(45,80%,90%);
 /**The color of the links */
 
 	text-decoration:none;
 	}	
 	#menuh a.active {
-	color: black;
-		background-color: #ed5214;
+	color: white;
+		background-color: hsl(45,60%,40%);
+	}
+	
+	.subheader {
+		background-color: hsl(45,80%,70%);
+		color: black;
 	}
 	
 	#menuh a.top_parent, #menuh a.top_parent:hover  /* attaches down-arrow to all top-parents */

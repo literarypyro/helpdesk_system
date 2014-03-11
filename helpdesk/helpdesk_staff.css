@@ -1,15 +1,18 @@
+#cssTable {
+	border-collapse:collapse;
+}
 #cssTable td {
 	border: 1px solid gray;
-	background-color: #95cbe9;
+	background-color:hsl(195,40%,70%);
 
-	}
+}
 table{
 	font: bold 14px "Trebuchet MS", Arial, sans-serif;
 
 }
 th {
 	border: 1px solid gray;
-	background-color: #00cc66;
+	background-color: hsl(45,80%,40%);
 	color: white;
 
 	/**color: #bd2031;*/
@@ -41,23 +44,27 @@ th {
 	}
 	#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
 	{
-	color: white;
-	background-color: #00cc66;
+	color: black;
+	background-color: hsl(45,80%,70%);
 	text-decoration:none;
 		/**	color: #bd2031;*/
+	}
+	.subheader {
+		background-color: hsl(45,80%,70%);
+		color: black;
 	}
 	
 	#menuh a:hover	/* menu on mouse-over  */
 	{
 	color: black;
-		background-color: #ed5214;
+		background-color: hsl(45,80%,90%);
 /**The color of the links */
 
 	text-decoration:none;
 	}	
 	#menuh a.active {
-	color: black;
-		background-color: #ed5214;
+	color: white;
+		background-color: hsl(45,60%,40%);
 	}
 	
 	#menuh a.top_parent, #menuh a.top_parent:hover  /* attaches down-arrow to all top-parents */

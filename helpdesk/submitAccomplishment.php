@@ -52,7 +52,7 @@ $userRow=$rs->fetch_assoc();
 
 <table width="100%"  bgcolor="#FFFFFF" cellpadding="5px" bordercolor="#CCCCCC" style="border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px">
 <tr>
-	<th style='border: 1px solid gray;background-color: #00cc66;color: white;' colspan=2 align=right>Computer Section Personnel: <font color=black><?php echo $userRow['staffer']; ?></font></th>
+	<th class='subheader' style='border: 1px solid gray;' colspan=2 align=right>Computer Section Personnel: <font color=black><?php echo $userRow['staffer']; ?></font></th>
 </tr>
 
 <tr>
@@ -60,11 +60,11 @@ $userRow=$rs->fetch_assoc();
 	require("helpdesk_sidebar.php");
 	//background-color:#66ceae; 
 	?>
-	<td width="85%" rowspan=2 valign="top"  style="background-color:#66ceae; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
+	<td width="85%" rowspan=2 valign="top"  style="background-color:hsl(225,80%,70%); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
 	<form action='submitAccomplishment.php' method='post'>
 	<table>
 	<tr>
-	<th style='border: 1px solid gray;background-color: #00cc66;color: white;'>Report on Client Request:</th><th style='border: 1px solid gray;background-color: #00cc66;color: #bd2031;'> 
+	<th style='border: 1px solid gray;background-color: hsl(45,80%,40%);color: white;'>Report on Client Request:</th><th style='border: 1px solid gray;background-color: hsl(45,80%,40%);color: #bd2031;'> 
 	<select name='task_id'>
 		<?php
 		//$db=new mysqli("localhost","root","","helpdesk_backup");
