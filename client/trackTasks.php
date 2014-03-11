@@ -35,17 +35,19 @@ table {
 text-decoration: none;
 color: #ffffff;
 }
-
+#alterTable {
+	border-collapse:collapse;
+}
 #alterTable td{
-background-color: #062e56;
-color: white;
-	
+background-color: hsl(195,40%,70%);
+color: black;
+	border:1px solid gray;
 }
 
 #alterTable th{
-background-color: #062e56;
+background-color: hsl(45,80%,40%);
 color: white;
-	
+	border:1px solid gray;
 }
 
 #newTable td{
@@ -82,8 +84,8 @@ color: #ffcc35;
 	}
 	#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
 	{
-	color: white;
-	background-color: #00cc66;
+	color: black;
+	background-color: hsl(45,80%,70%);
 	text-decoration:none;
 	}
 	
@@ -91,14 +93,14 @@ color: #ffcc35;
 	#menuh a:hover	/* menu on mouse-over  */
 	{
 	color: black;
-		background-color: #ed5214;
+		background-color: hsl(45,80%,90%);
 /**The color of the links */
 
 	text-decoration:none;
 	}	
 	#menuh a.active {
-	color: black;
-		background-color: #ed5214;
+	color: white;
+		background-color: hsl(45,60%,40%);
 	}
 	
 	#menuh a.top_parent, #menuh a.top_parent:hover  /* attaches down-arrow to all top-parents */
@@ -191,7 +193,7 @@ color: #ffcc35;
 	require("client_sidebar.php");
 	//background-color:#66ceae; 
 	?>
-	<td width="85%" rowspan=2 valign="top"  style="background-color:#66ceae; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
+	<td width="85%" rowspan=2 valign="top"  style="background-color:hsl(225,80%,70%); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
 
 	<table id='alterTable' width=100% >
 	<tr>

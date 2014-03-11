@@ -80,7 +80,7 @@ function disableForm(a){
 <title>Submit New Helpdesk Issue</title>
 <style type="text/css">
 #cssTable {
-background-color: #062e56;
+background-color: hsl(225,40%,30%);
 color: white;
 
 }
@@ -140,8 +140,8 @@ color: #ffcc35;
 	}
 	#menuh a:link, #menuh a:visited, #menuh a:active	/* menu at rest */
 	{
-	color: white;
-	background-color: #00cc66;
+	color: black;
+	background-color: hsl(45,80%,70%);
 	text-decoration:none;
 	}
 	
@@ -149,14 +149,14 @@ color: #ffcc35;
 	#menuh a:hover	/* menu on mouse-over  */
 	{
 	color: black;
-		background-color: #ed5214;
+		background-color: hsl(45,80%,90%);
 /**The color of the links */
 
 	text-decoration:none;
 	}	
 	#menuh ul li a.active {
-	color: black;
-		background-color: #ed5214;
+	color: white;
+		background-color: hsl(45,60%,40%);
 	}
 	
 	#menuh a.top_parent, #menuh a.top_parent:hover 
@@ -233,7 +233,7 @@ color: #ffcc35;
 	require("client_sidebar.php");
 	//background-color:#66ceae; 
 	?>
-	<td width="85%" rowspan=2 valign="top"  style="background-color:#66ceae; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
+	<td width="85%" rowspan=2 valign="top"  style="background-color:hsl(225,80%,70%); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
 <form enctype="multipart/form-data" action='createTask.php' method='post'>
 <table id='cssTable' align=center style='border: 1px solid gray'>
 <tr><th colspan=2>Report New Issue</th></tr>
