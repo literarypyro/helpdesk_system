@@ -191,7 +191,7 @@ function selectOption(elementName,elementValue){
 	<!--Heading Table-->
 	<table  width="100%"  bgcolor="#FFFFFF" cellpadding="5px" bordercolor="#CCCCCC" style="border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px">
 <tr>
-	<th colspan=2 align=right>Administrator: <font color=black><?php echo $userRow['staffer']; ?></font></th>
+	<th colspan=2 class='subheader'	align=right>Administrator: <font color=black><?php echo $userRow['staffer']; ?></font></th>
 </tr>
 
 <tr>
@@ -199,7 +199,7 @@ function selectOption(elementName,elementValue){
 	require("admin_sidebar.php");
 	//background-color:#66ceae; 
 	?>
-	<td width="85%" rowspan=2 valign="top"  style="background-color:#66ceae; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
+	<td width="85%" rowspan=2 valign="top"  style="background-color:hsl(225,80%,70%); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
 
 	<form action='dispatch monitor report.php' method=post>
 

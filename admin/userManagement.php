@@ -15,7 +15,8 @@ $_SESSION['helpdesk_page']="userManagement.php";
 <link rel="stylesheet" type="text/css" href="admin_staff.css" />
 <?php
 	if(isset($_POST['submitValue'])){
-		$db=new mysqli("nea","hdesk","123456","helpdesk_system");
+		$db=retrieveHelpdeskDb();
+		
 		if($_POST['submitValue']=="Add"){
 			$sql="insert into dispatch_staff(staffer,position) values (\"".$_POST['name']."\",\"".$_POST['position']."\")";
 			$rs=$db->query($sql);
@@ -60,7 +61,8 @@ $_SESSION['helpdesk_page']="userManagement.php";
 
 ?>
 <?php
-$db=new mysqli("nea","hdesk","123456","helpdesk_system");
+$db=retrieveHelpdeskDb();
+
 $sql="SELECT * FROM dispatch_staff inner join login on dispatch_staff.id=login.username order by dispatch_staff.id";
 $rs=$db->query($sql);
 $nm=$rs->num_rows;
@@ -185,7 +187,7 @@ function iterate(pgindex,action){
 	<!--Heading Table-->
 	<table width="100%"  bgcolor="#FFFFFF" cellpadding="5px" bordercolor="#CCCCCC" style="border-left-width: 1px; border-right-width: 1px; border-bottom-width: 1px">
 <tr>
-	<th colspan=2 align=right>Administrator: <font color=black><?php echo $userRow['staffer']; ?></font></th>
+	<th colspan=2 class='subheader' align=right>Administrator: <font color=black><?php echo $userRow['staffer']; ?></font></th>
 </tr>
 
 <tr>
@@ -193,7 +195,7 @@ function iterate(pgindex,action){
 	require("admin_sidebar.php");
 	//background-color:#66ceae; 
 	?>
-	<td width="85%" rowspan=2 valign="top"  style="background-color:#66ceae; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
+	<td width="85%" rowspan=2 valign="top"  style="background-color:hsl(225,80%,70%); border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color:black;" bordercolor="#FF6600">
 	<form action="userManagement.php" method="post">
 	<table  id='cssTable' >
 		<tr><th id='labelData' colspan=2>Edit Helpdesk Data</th></tr>
@@ -235,7 +237,7 @@ function iterate(pgindex,action){
 	
 		</tr>
 		<tr>
-		<td style="background-color:#66ceae; border:0;" align=center colspan=2><input id='submitValue' name='submitValue' type=submit value='Edit' /></td>
+		<td style="background-color:hsl(225,80%,70%); border:0;" align=center colspan=2><input id='submitValue' name='submitValue' type=submit value='Edit' /></td>
 		</tr>
 	</table>
 
